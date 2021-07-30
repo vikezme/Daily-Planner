@@ -34,3 +34,9 @@ $( document ).ready(function() {
       window.localStorage.setItem('calendarEntries', JSON.stringify(calendarEntries));
       });
 });
+
+$(document).ready(function(){
+    $(".saveBtn").click(function(){
+        $(".entry").attr("style","background-color:red");
+    });
+});

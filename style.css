@@ -78,13 +78,14 @@ textarea {
 
 .entry {
   height: 100px;
+  width: 700px;
   background-color: skyblue;
   border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
 }
 input{
-  width:1000px;
+  width:500px;
 }
