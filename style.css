@@ -79,7 +79,7 @@ textarea {
 .entry {
   height: 100px;
   width: 700px;
-  background-color: skyblue;
+  border: 2px solid black;
   border-radius: 20px;
   font-size: 20px;
   font-weight: bold;

@@ -6,6 +6,7 @@ $( document ).ready(function() {
     $('#currentDay').html(moment().format("dddd, MMMM Do YYYY"));
     for(var i=9;i<=17;++i) {
       formattedTime = moment().hour(i).format("hA");
+    
       containerHTML += `        <div id="${i}" class="entry">
                 <div>${formattedTime}</div>
                 <input type="text"/>
