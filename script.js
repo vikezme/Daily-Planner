@@ -6,7 +6,13 @@ $( document ).ready(function() {
     $('#currentDay').html(moment().format("dddd, MMMM Do YYYY"));
     for(var i=9;i<=17;++i) {
       formattedTime = moment().hour(i).format("hA");
-    
+      var whenClass = "when-present";
+      if(moment().hour(i).isBefore()) {
+        whenClass = "when-past";
+      } else if(moment().hour(i).isAfter()) {
+        whenClass = "when-future";
+      };
+
       containerHTML += `        <div id="${i}" class="entry">
                 <div>${formattedTime}</div>
                 <input type="text"/>
@@ -34,10 +40,4 @@ $( document ).ready(function() {
       calendarEntries[entryTime] = entryText;
       window.localStorage.setItem('calendarEntries', JSON.stringify(calendarEntries));
       });
-});
-
-$(document).ready(function(){
-    $(".saveBtn").click(function(){
-        $(".entry").attr("style","background-color:red");
-    });
 });

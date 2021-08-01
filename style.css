@@ -89,3 +89,15 @@ textarea {
 input{
   width:500px;
 }
+
+.when-past {
+  background-color: gray;
+}
+
+.when-present {
+  background-color: red;
+}
+
+.when-future {
+  background-color: green;
+}
